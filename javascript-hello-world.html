@@ -6,7 +6,11 @@
     <title>Javascript Hello World</title>
   </head>
   <body>
-    <button type="button" onclick="sayHello()">Click me</button>
+    <!-- Commentato per l'esercizio sulle funzioni
+    <button type="button" onclick="sayHello()">Click me</button> -->
+    <button type="button" onclick="getName()">Click me</button>
+
+    <!-- INIZIO DI JAVASCRIPT -->
     <script>
       function sayHello() {
         alert("Hello World!");
@@ -58,6 +62,25 @@
       }
 
       sayWord("Ciao");
+
+      //----------- Esercizi delle funzioni ----
+      function sayHello() {
+        const userName = "Batman";
+        alert("Hello " + userName + "!");
+      }
+
+      function sayHello() {
+        const userName = prompt("What is your name?");
+        alert("Hello " + userName + "!");
+      }
+
+      function getName() {
+        const userName = prompt("What is your name?");
+        sayHello(userName);
+      }
+      function sayHello(name) {
+        alert("Hello " + name + "!");
+      }
     </script>
   </body>
 </html>
